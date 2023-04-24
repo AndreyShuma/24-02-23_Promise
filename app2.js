@@ -11,7 +11,7 @@ const run = async () => {
     console.log('Await RUN1');
 
     
-    //file 2
+    //file 2 reade and write
     const data2 =await fsPromise.readFile(`${__dirname}/reade/text2.txt`,'UTF-8');
 
     const newData2 = '111-' + data2 + '-222';
@@ -19,7 +19,7 @@ const run = async () => {
     await fsPromise.writeFile(`${__dirname}/reade/text2.txt`, newData2);
     console.log('Await RUN2');
 
-    //file 3
+    //file 3 reade and write
     const data3 =await fsPromise.readFile(`${__dirname}/reade/text3.txt`,'UTF-8');
 
     const newData3 = '111-' + data3 + '-222';
